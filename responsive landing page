@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQ Fitness</title>
+</head>
+<link
+    href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Open+Sans:wght@700&family=Roboto+Condensed:wght@500;600&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Roboto Condensed', sans-serif;
+
+        margin: 0px;
+        padding: 0px;
+        background: url('img/workout.jpg');
+        color: whitesmoke;
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid black; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 136px;
+    }
+
+    .mid {
+        display: block;
+        width: 56%;
+        margin: 29px auto;
+        /* border: 2px solid black; */
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid black; */
+        position: absolute;
+        right: 73px;
+        top: 43px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: whitesmoke;
+        background-color: grey;
+        padding: 4px 14px;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Roboto Condensed', sans-serif;
+
+    }
+
+    .btn:hover {
+        background-color: black;
+    }
+
+    .container {
+        /* border: 2px solid black; */
+        margin: 76px 580px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .formgroup input {
+        font-family: 'Roboto Condensed', sans-serif;
+        text-align: center;
+        display: block;
+        width: 308px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/Like.png" alt="">
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Centre</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Welcome to IQ Fitness</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" Name="" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="text" Name="" placeholder="Enter your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" Name="" placeholder="Enter your Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" Name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
